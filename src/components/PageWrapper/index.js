@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const PageWrapper = ({children}:any) => {
+const PageWrapper = ({children}) => {
   
   return (
     <StyledPageWrapper className='page-wrapper'>
