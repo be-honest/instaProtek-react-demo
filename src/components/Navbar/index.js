@@ -2,14 +2,14 @@ import React from "react"
 import { Bars, Nav, NavBtn, NavBtnLink, NavLink, NavMenu } from "./NavbarElements"
 import Logo from '../../images/Logo.png'
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavLink to="/">
           <img src={Logo} alt="instaProtek Logo" style={{width:"50%"}}/>
         </NavLink>
-        <Bars/>
+        <Bars onClick={toggle}/>
         <NavMenu>
           <NavLink to="/" activeStyle> 
             Home
