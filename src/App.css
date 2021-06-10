@@ -4,5 +4,10 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 300ms ease-in-out;
-  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1542px) {
+  * {
+    overflow-x: hidden;
+  }
 }

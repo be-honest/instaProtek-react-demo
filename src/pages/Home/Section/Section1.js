@@ -28,7 +28,7 @@ const WhyInstaProtek = () => {
               <div className="right-details">
                 <div className="list-item">
                   <CheckIcon/>
-                  <span theme={Themes}>Afforadable</span>
+                  <span theme = {Themes}>Afforadable</span>
                   <p>Smart platform combined with sophisticated app allowing for lower cost and deductible.</p>
                 </div>
                 <div className="list-item">
@@ -60,7 +60,8 @@ const WhyInstaProtek = () => {
 }
 
 const SectionWrapper = styled.div`
-  margin-top: 8rem;
+  margin-top: 15rem;
+  min-height: 1750px;
 `
 const SectionHeader = styled.div`
   text-align: center;
@@ -107,7 +108,7 @@ const SectionContentWrapper = styled.div`
         align-content: space-evenly;
         width: 50%;
         span{
-          color: ${(t) => t.theme.buttoncolor};
+          color: #2ea1f8;
           font-weight: 900;
           font-size: 1.5rem;
         }
@@ -122,6 +123,9 @@ const SectionContentWrapper = styled.div`
     font-size: 1.5rem;
     .left-content{
       padding-bottom: 3rem;
+      p{
+        padding-bottom: 3rem;
+      }
     }
   }
 `

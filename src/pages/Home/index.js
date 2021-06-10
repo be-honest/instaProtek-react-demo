@@ -19,8 +19,8 @@ const Home = () => {
       <Navbar toggle={toggle}/>
       <HeroSection/>
       <WhyInstaProtek/>
-      {/* <InstaProtekApp/> */}
-      {/* <GadgetCards/> */}
+      <InstaProtekApp/>
+      <GadgetCards/>
     </>
   )
 }

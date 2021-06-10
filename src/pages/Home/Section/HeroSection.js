@@ -8,8 +8,6 @@ import GoogleLogo from '../../../images/Mask Group 2.png'
 import AppleLogo from '../../../images/Mask Group 3.png'
 
 const HeroSection = () => {
-
-  console.log(Themes);
   return (
     <HeroContainer>
       <HeroBackground>
