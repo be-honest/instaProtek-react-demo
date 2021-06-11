@@ -48,7 +48,7 @@ const GadgetCards = () => {
   )
 }
 
-const SectionWrapper = styled.div`
+const SectionWrapper = styled.section`
   background-color: #f8f8f8;
  .card1-container {
     padding-top: 4rem;
@@ -200,6 +200,7 @@ const SectionWrapper = styled.div`
   }
   .section-button{
     padding-top: 5rem;
+    padding-bottom: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;

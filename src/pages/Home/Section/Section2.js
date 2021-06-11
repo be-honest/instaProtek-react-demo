@@ -14,7 +14,7 @@ const InstaProtekApp = () => {
   )
 }
 
-const SectionWrapper = styled.div`
+const SectionWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;

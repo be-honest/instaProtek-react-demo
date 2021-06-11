@@ -59,7 +59,7 @@ const WhyInstaProtek = () => {
   )
 }
 
-const SectionWrapper = styled.div`
+const SectionWrapper = styled.section`
   margin-top: 15rem;
   min-height: 1750px;
 `
