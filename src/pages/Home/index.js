@@ -1,8 +1,11 @@
 import React, {useState} from 'react'
+import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar'
 import SideBar from '../../components/SideBar'
+import FAQSection from './Section/FAQSection';
 import HeroSection from './Section/HeroSection';
 import WhyInstaProtek from './Section/Section1';
+import AdSection from './Section/Section10';
 import InstaProtekApp from './Section/Section2';
 import GadgetCards from './Section/Section3';
 import ProductSection from './Section/Section5';
@@ -31,6 +34,9 @@ const Home = () => {
       <ProductGuaranteeSection/>
       <PlatformSection/>
       <ReviewsSection/>
+      <FAQSection/>
+      <AdSection/>
+      <Footer/>
     </>
   )
 }

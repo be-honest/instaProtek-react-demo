@@ -1,5 +1,4 @@
 import React from 'react'
-
 import styled from 'styled-components'
 import SectionImage from '../../../images/Group 1180.png'
 import ModalImage from '../../../images/Group 1189.png'
