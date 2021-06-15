@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 import PageWrapper from '../../../components/PageWrapper'
 import FAQs from '../../../images/FAQS.png'
 
 const FAQSection = () => {
+  const [show, toggleShow1] = useState(false);
+  const [show2, toggleShow2] = useState(false);
+  const [show3, toggleShow3] = useState(false);
+  const [show4, toggleShow4] = useState(false);  
+
   return (
     <Section>
       <PageWrapper>
@@ -14,17 +19,29 @@ const FAQSection = () => {
               <p>If you have any other questions about our device insurance, you can checkout our common questions here! </p>
               <div className="list-container">
                 <div className="common-question-list">
-                  <span>How do I register my device? </span>
-                  <span>What is the step by step process of registration using the app?</span>
-                  <span>How long does my limited warranty last?</span>
-                  <span>How can I file a claim?</span>
+                  <span onClick={ ()=> toggleShow1(!show)}>How do I register my device?</span>
+                    {show && 
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    }
+                  <span onClick={ ()=> toggleShow2(!show2)}>What is the step by step process of registration using the app?</span>
+                    {show2 && 
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    }
+                  <span onClick={ ()=> toggleShow3(!show3)}>How long does my limited warranty last?</span>
+                    {show3 && 
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    }
+                  <span onClick={ ()=> toggleShow4(!show4)}>How can I file a claim?</span>
+                    {show4 && 
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    }
                 </div>
-                <div className="plus-sign">
+                {/* <div className="plus-sign">
                   <div className="plus"><span>&#43;</span></div>
                   <div className="plus"><span>&#43;</span></div>
                   <div className="plus"><span>&#43;</span></div>
                   <div className="plus"><span>&#43;</span></div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -72,6 +89,7 @@ const SectionWrapper = styled.div`
             font-size: 1.5rem;
             font-weight: 500;
             display: inline-block;
+            cursor: pointer;
           }
         }
         .plus-sign {

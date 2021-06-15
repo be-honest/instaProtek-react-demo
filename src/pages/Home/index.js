@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Footer from '../../components/Footer';
+import InfoSection from '../../components/InfoSection';
 import Navbar from '../../components/Navbar'
 import SideBar from '../../components/SideBar'
 import FAQSection from './Section/FAQSection';
@@ -8,6 +9,7 @@ import WhyInstaProtek from './Section/Section1';
 import AdSection from './Section/Section10';
 import InstaProtekApp from './Section/Section2';
 import GadgetCards from './Section/Section3';
+import PhoneInfographic from './Section/Section4';
 import ProductSection from './Section/Section5';
 import PriceChartSection from './Section/Section6';
 import ProductGuaranteeSection from './Section/Section7';
@@ -26,9 +28,11 @@ const Home = () => {
       <SideBar isOpen={isOpen} toggle = {toggle}/>
       <Navbar toggle={toggle}/>
       <HeroSection/>
+      <InfoSection/>
       <WhyInstaProtek/>
       <InstaProtekApp/>
       <GadgetCards/>
+      <PhoneInfographic/>
       <ProductSection/>
       <PriceChartSection/>
       <ProductGuaranteeSection/>
