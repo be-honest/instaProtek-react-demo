@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useSpring, animated } from 'react-spring'
 import PageWrapper from "../../../components/PageWrapper"
 import TGreenIcon from '../../../images/Group 1167.png'
 import { FaCheck } from 'react-icons/fa';
@@ -8,22 +9,30 @@ import backgroundImg from '../../../images/Asset 10@300x-9.png'
 import Button from '../../../components/Button';
 
 const WhyInstaProtek = () => {
+  const slideLeft = useSpring({ from: { opacity: 0 }, to: { opacity: 2  } });
+  
   return (
     <SectionWrapper>
       <PageWrapper>
         <SectionContentWrapper>
-          <SectionHeader>
+          {/* <Spring 
+            from={{ opacity: 0, marginRight: -1000}}
+            to={{ opacity: 1, marginRight: 0}}
+            config={{delay: 1000, duration: 1000}}
+          > */}
+          <SectionHeader style={slideLeft}>
             <img src={TGreenIcon} alt="T Green Icon" />
             <h2>Why instaProtek?</h2>
           </SectionHeader>
+          {/* </Spring> */}
           <SectionContent>
             <div className="backgroundImg">
               <img src={backgroundImg} alt="" />
             </div>
-            <div className="right-container">
+            <animated.div className="right-container" style={slideLeft}>
               <h2>On Demand, Easy To use, App Driven Protection</h2>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, sed diam nonumy eirmod et.</p>
-            </div>
+            </animated.div>
             <div className="right-details-container">
               <div className="right-details">
                 <div className="list-item">

@@ -28,7 +28,7 @@ const Home = () => {
       <SideBar isOpen={isOpen} toggle = {toggle}/>
       <Navbar toggle={toggle}/>
       <HeroSection/>
-      <InfoSection/>
+      {/* <InfoSection/> */}
       <WhyInstaProtek/>
       <InstaProtekApp/>
       <GadgetCards/>
