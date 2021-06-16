@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
-import { useSpring, animated } from 'react-spring'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import PageWrapper from "../../../components/PageWrapper"
@@ -11,8 +10,6 @@ import backgroundImg from '../../../images/Asset 10@300x-9.png'
 import Button from '../../../components/Button';
 
 const WhyInstaProtek = () => {
-  const slideLeft = useSpring({ from: { opacity: 0 }, to: { opacity: 2  } });
-  
   useEffect(() => {
     AOS.init({duration: 1000});
   },[]);
