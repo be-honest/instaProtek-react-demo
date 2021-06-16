@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import PhoneApp from "../../../images/Instaprotek-App.png"
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const InstaProtekApp = () => {
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  },[]);
+
   return (
-    <SectionWrapper>
-      {/* <SectionContent> */}
-    <h2>instaProtek App</h2>
-    <p>Frictionless, app-driven registration and communication</p>
-    <img src={PhoneApp} alt="" className="phoneApp"/>
-      {/* </SectionContent> */}
+    <SectionWrapper data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
+      <h2>instaProtek App</h2>
+      <p>Frictionless, app-driven registration and communication</p>
+      <img src={PhoneApp} alt="" className="phoneApp"/>
     </SectionWrapper>
   )
 }

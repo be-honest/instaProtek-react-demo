@@ -1,13 +1,19 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import styled from 'styled-components'
 import PageWrapper from '../../../components/PageWrapper'
 import FAQs from '../../../images/FAQS.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const FAQSection = () => {
   const [show, toggleShow1] = useState(false);
   const [show2, toggleShow2] = useState(false);
   const [show3, toggleShow3] = useState(false);
   const [show4, toggleShow4] = useState(false);  
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  },[]);
+
 
   return (
     <Section>
@@ -45,7 +51,7 @@ const FAQSection = () => {
               </div>
             </div>
           </div>
-          <div className="section-right-content">
+          <div className="section-right-content" data-aos="zoom-in">
             <img src={FAQs} alt="FAQs" />
           </div>
         </SectionWrapper>

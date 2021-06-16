@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { useSpring, animated } from 'react-spring'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 import PageWrapper from "../../../components/PageWrapper"
 import TGreenIcon from '../../../images/Group 1167.png'
 import { FaCheck } from 'react-icons/fa';
@@ -11,30 +13,28 @@ import Button from '../../../components/Button';
 const WhyInstaProtek = () => {
   const slideLeft = useSpring({ from: { opacity: 0 }, to: { opacity: 2  } });
   
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  },[]);
+
   return (
     <SectionWrapper>
       <PageWrapper>
         <SectionContentWrapper>
-          {/* <Spring 
-            from={{ opacity: 0, marginRight: -1000}}
-            to={{ opacity: 1, marginRight: 0}}
-            config={{delay: 1000, duration: 1000}}
-          > */}
-          <SectionHeader style={slideLeft}>
+          <SectionHeader>
             <img src={TGreenIcon} alt="T Green Icon" />
             <h2>Why instaProtek?</h2>
           </SectionHeader>
-          {/* </Spring> */}
           <SectionContent>
             <div className="backgroundImg">
               <img src={backgroundImg} alt="" />
             </div>
-            <animated.div className="right-container" style={slideLeft}>
+            <div className="right-container" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
               <h2>On Demand, Easy To use, App Driven Protection</h2>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, sed diam nonumy eirmod et.</p>
-            </animated.div>
+            </div>
             <div className="right-details-container">
-              <div className="right-details">
+              <div className="right-details" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
                 <div className="list-item">
                   <CheckIcon/>
                   <span theme = {Themes}>Afforadable</span>
@@ -53,7 +53,7 @@ const WhyInstaProtek = () => {
               </div>
             </div>
             <div className="left-container">
-              <div className="left-content">
+              <div className="left-content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
                 <h2>
                   Protect your electronics, the way you protect your money.
                 </h2>

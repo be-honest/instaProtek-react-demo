@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import PageWrapper from '../../../components/PageWrapper'
 import StyleLines from '../../../images/Group 1164.png'
@@ -7,8 +7,14 @@ import Dashboard2 from '../../../images/2-crop.png'
 import ProductLogo from '../../../images/Group 1178.png'
 import Wave from '../../../images/Path-new.png'
 import Button from '../../../components/Button'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const ProductGuaranteeSection = () => {
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  },[]);
+
   return (
     <SectionWrapper>
       <SectionContainer>
@@ -20,7 +26,7 @@ const ProductGuaranteeSection = () => {
             <img src={Dashboard1} alt="" className="front" />
             <img src={Dashboard2} alt="" className="back" />
           </div>
-          <div className="right-content">
+          <div className="right-content" data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000">
             <img src={ProductLogo} alt="" />
             <h2>Product Guarantee</h2>
             <p>Inlelligent and modern app-based solution built for electronic products distributors. It's a cost-efficient tool made to help increase business revenue and customer satisfaction by settings products apart from the competition through dependadble product guarantee services.</p>

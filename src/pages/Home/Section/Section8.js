@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Button from '../../../components/Button'
 import PageWrapper from '../../../components/PageWrapper'
 import GreenLogo from '../../../images/Group 1182.png'
 import LaptopPhone from '../../../images/Group 1032.png'
 import Lines from '../../../images/Group 1164.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const PlatformSection = () => {
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  },[]);
+
   return (
     <SectionWrapper>
       <PageWrapper>
         <SectionContainer>
-          <div className="section-content-right">
+          <div className="section-content-right" data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000">
             <img src={GreenLogo} alt="" />
             <h2>production guarantee & protection platform</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem Ipsum Dolor Sit Amet,</p>

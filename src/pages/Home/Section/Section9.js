@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import PageWrapper from '../../../components/PageWrapper'
 import Customer from '../../../images/Group 1134.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const ReviewsSection = () => {
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  },[]);
+
   return (
     <SectionWrapper>
       <PageWrapper>
         <div className="container">
-          <div className="section-left-content">
+          <div className="section-left-content" data-aos="zoom-in" data-aos-delay="100">
             <img src={Customer} alt="" />
           </div>
           <div className="section-right-content">
