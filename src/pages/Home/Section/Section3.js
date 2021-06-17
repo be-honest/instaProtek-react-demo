@@ -80,6 +80,10 @@ const SectionWrapper = styled.section`
           width: 100%;
           padding-top: 2rem;
         }
+        @media (max-width: 900px){
+          width: 600px;
+          padding-bottom: 2rem;
+        }
         h3 {
           text-align: center;
           text-align: center;

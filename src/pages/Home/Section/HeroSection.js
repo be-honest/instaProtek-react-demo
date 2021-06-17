@@ -74,6 +74,9 @@ const BackgroundImage = styled.img`
   height: 871px;
   -o-object-fit: cover;
   object-fit: cover;
+  @media (max-width: 900px){
+    height: 750px;
+  }
 `
 
 const HeroContent = styled.div`
@@ -114,7 +117,11 @@ const HeroBtnWrapper = styled.div`
     padding-top: 5rem;
     img {
       width: 7rem;
+      @media (max-width: 900px){
+        width: 5rem;
+      }
     }
+    
   }
   .hero-brands {
     padding-top: 8rem;
@@ -138,6 +145,9 @@ const HeroFooter = styled.div`
   justify-content: center;
   align-content: center;
   padding: 2rem;
+  @media (max-width: 900px){
+    padding: 1rem;
+  }
   @media (max-width: 769px){
    text-align: center 
   }

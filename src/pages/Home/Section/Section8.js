@@ -36,6 +36,9 @@ const PlatformSection = () => {
 const SectionWrapper = styled.section`
   position: relative;
   margin-top:5rem;
+  @media (max-width: 900px){
+    margin:0;
+  }
 `
 
 const SectionContainer = styled.div`
@@ -60,6 +63,9 @@ const SectionContainer = styled.div`
       @media (max-width: 1024px) {
         font-size: 2rem;
       }
+      @media (max-width: 900px){
+        font-size: 1.5rem;
+      }
     }
     p {
       font-size: 1rem;
@@ -70,10 +76,14 @@ const SectionContainer = styled.div`
     Button{
       margin-bottom:3rem;
     }
-    @media (max-width: 880px) {
+    @media (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      width: 100%;
+      padding: 1rem 2rem;
     }
+
   }
   .section-content-left{
     width: 100%;

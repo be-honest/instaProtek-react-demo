@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import PageWrapper from "../../../components/PageWrapper"
 import TGreenIcon from '../../../images/Group 1167.png'
 import { FaCheck } from 'react-icons/fa';
-import {Themes} from '../../../utils/Variables'
+import { Themes } from '../../../utils/Variables'
 import backgroundImg from '../../../images/Asset 10@300x-9.png'
 import Button from '../../../components/Button';
 
@@ -68,6 +68,10 @@ const WhyInstaProtek = () => {
 const SectionWrapper = styled.section`
   margin-top: 15rem;
   min-height: 1750px;
+  @media (max-width: 900px){
+    margin-top: 5rem;
+    min-height: 1000px;
+  }
 `
 const SectionHeader = styled.div`
   text-align: center;
@@ -87,7 +91,13 @@ const SectionContentWrapper = styled.div`
     position: absolute;
     -o-object-fit: cover;
     object-fit: cover;
-    width: 100%
+    width: 100%;
+    img{
+      @media (max-width: 900px){
+        width: 100%;
+        opacity: 0.3;
+      }
+    }
   }
   .right-container{
     position: absolute;
@@ -96,6 +106,12 @@ const SectionContentWrapper = styled.div`
     max-width: 550px;
     font-size: 1.5rem;
     padding: 0 2rem;
+    @media (max-width: 900px){
+      right: 8rem;
+      max-width: 350px;
+      font-size: 1rem;
+      text-align: center;
+    }
   }
   .right-details-container{
     position: absolute;
@@ -120,6 +136,10 @@ const SectionContentWrapper = styled.div`
         }
       }
     }
+    @media (max-width: 900px){
+      top: 20rem;
+      padding: 0 5rem;
+    }
   }
   .left-container{
     position: absolute;
@@ -132,6 +152,18 @@ const SectionContentWrapper = styled.div`
       p{
         padding-bottom: 3rem;
       }
+      @media (max-width: 900px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+    @media (max-width: 900px){
+      left: 8rem;
+      bottom: -45rem;
+      font-size: 1rem;
+      max-width: 350px;
     }
   }
 `
@@ -139,7 +171,6 @@ const SectionContentWrapper = styled.div`
 const SectionContent = styled.div`
   padding-top: 5rem;
 `
-
 
 const CheckIcon = styled(FaCheck)`
   color: lightgreen;

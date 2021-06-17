@@ -31,8 +31,9 @@ const StyledButton = styled.a`
     color: #fff;
     transform: translateY(-7px);
   }
-  @media (max-width: 769px){
+  @media (max-width: 900px){
     width: 8rem;
+    font-size: 0.8rem;
   }
 
 `

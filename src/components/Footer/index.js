@@ -1,4 +1,5 @@
 import React from 'react'
+import { animateScroll as scroll } from 'react-scroll'
 import Logo from '../../images/logo_full_light.png'
 import { 
   FooterBrand, 
@@ -18,11 +19,15 @@ import {
 } from './FooterElements'
 
 const Footer = () => {
+  const scrollToTop = () =>{
+    scroll.scrollToTop();
+  }
+
   return (
     <FooterContainer>
       <FooterWrap>
         <FooterLinksWrapper>
-          <FooterBrand>
+          <FooterBrand onClick={scrollToTop}>
             <img src={Logo} alt="instaProtek Logo" />
           </FooterBrand>
           <FooterLinksItem>

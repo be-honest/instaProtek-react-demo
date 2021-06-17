@@ -18,11 +18,9 @@ const ReviewsSection = () => {
             <img src={Customer} alt="" />
           </div>
           <div className="section-right-content">
-            {/* <div className="details"> */}
               <h2>Reliable!</h2>
               <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem Ipsum Dolor Sit Amet,"</p>
               <span>John Doe</span>
-            {/* </div> */}
             <div className="rating-box">
               <span className="rating-star full-star">&#9733;</span>
               <span className="rating-star full-star">&#9733;</span>  
@@ -39,10 +37,25 @@ const ReviewsSection = () => {
 
 const SectionWrapper = styled.section`
   margin:3rem 0;
+  @media (max-width: 900px){
+    margin: 0;
+  }
   .container{
     display: flex;
     justify-content: center;
     align-items: center;
+    img{
+      @media (max-width){
+        width: 100%;
+      }
+    }
+    .section-right-content{
+      @media (max-width: 900px){
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
     h2 {
       font-size: 2rem;
     }
@@ -61,6 +74,10 @@ const SectionWrapper = styled.section`
         float: left;
         color: #f2b01e;
       }
+    }
+    @media (max-width: 900px){
+      flex-direction: column;
+      padding: 2rem;
     }
   }
 `

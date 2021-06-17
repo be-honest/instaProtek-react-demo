@@ -34,11 +34,7 @@ const SectionWrapper = styled.section`
     padding-top: 0.5rem;
     color: $secondarycolor;
   }
-  .app-crop {
-    width: 1136px;
-    height: 400;
-    object-fit: cover;
-    object-position: 20px 10px;
+  .phoneApp {
     @media (max-width: 900px) {
       width: 100%;
     }

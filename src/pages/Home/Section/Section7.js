@@ -64,9 +64,8 @@ const SectionContainer = styled.div`
     @media (max-width: 1024px) {
       width: 45%;
     }
-    @media (max-width: 880px) {
-      position: static;
-      height: auto;
+    @media (max-width: 900px) {
+      display: none;
     }
   }
   .left-content {
@@ -125,9 +124,8 @@ const SectionContainer = styled.div`
         width: 100%;
       }
     }
-    @media (max-width: 880px) {
-      position: static;
-      margin-left: 11rem;
+    @media (max-width: 900px) {
+     padding: 2rem;
     }
     @media (max-width: 600px) {
       margin: 0;
@@ -137,7 +135,13 @@ const SectionContainer = styled.div`
     position: absolute;
     left: 70rem;
     top: 10rem;
-    @media (max-width: 1400px) {
+    img{
+      @media (max-width: 900px){
+        width: 17%;
+        padding-bottom: 0.5rem;
+      }
+    }
+    /* @media (max-width: 1400px) {
       left: 52rem;
     }
     @media (max-width: 1200px) {
@@ -146,9 +150,20 @@ const SectionContainer = styled.div`
     @media (max-width: 1024px) {
       left: 37rem;
       top: 72px;
+    } */
+    @media (max-width: 900px){
+      position: unset;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 2rem;
+      text-align: center;
     }
     h2 {
       font-size: 2rem;
+      @media (max-width: 900px){
+        font-size: 1.5rem;
+      }
     }
     p {
       font-size: 1.2rem;
@@ -161,10 +176,13 @@ const SectionContainer = styled.div`
         padding-bottom: 1rem;
         padding-right: 1rem;
       }
-      @media (max-width: 1024px) {
-        padding-bottom: 1.5rem;
+      @media (max-width: 900px) {
+        font-size: 1rem;
       }
     }
+  }
+  @media (max-width: 900px){
+    min-height: 960px;
   }
 `
 

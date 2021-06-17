@@ -18,7 +18,11 @@ const PriceChartSection = () => {
   )
 }
 
-const SectionWrapper = styled.section``
+const SectionWrapper = styled.section`
+  @media (max-width: 900px){
+    text-align: center;
+  }
+`
 
 const SectionContent = styled.section`
   display: flex;

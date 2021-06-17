@@ -22,6 +22,13 @@ export const FooterLinksWrapper = styled.div`
   margin: 0 auto;
 `
 
+export const FooterBrand = styled(Link)`
+  padding-right: 7rem;
+  @media (max-width: 820px){
+    margin-bottom: 2rem;
+  }
+`
+
 export const FooterLinksItem = styled.div`
   display:flex;
   flex-direction: column;
@@ -31,13 +38,6 @@ export const FooterLinksItem = styled.div`
   width: 320px;
   box-sizing: border-box;
   color: #fff;
-`
-
-export const FooterBrand = styled.div`
-  padding-right: 7rem;
-  @media (max-width: 820px){
-    margin-bottom: 2rem;
-  }
 `
 
 export const FooterLinkTitle = styled.h2`
@@ -90,6 +90,7 @@ export const FooterContent = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
+  padding-bottom: 1rem;
 `
 
 export const FooterSpan = styled.span`

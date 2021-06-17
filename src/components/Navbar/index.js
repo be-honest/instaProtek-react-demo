@@ -1,11 +1,17 @@
 import React from "react"
+import { animateScroll as scroll } from 'react-scroll'
 import { Bars, Nav, NavBtn, NavBtnLink, NavLink, NavMenu } from "./NavbarElements"
 import Logo from '../../images/Logo.png'
 
 const Navbar = ({ toggle }) => {
+  
+  const scrollToTop = () =>{
+    scroll.scrollToTop();
+  }
+
   return (
     <>
-      <Nav>
+      <Nav onClick={scrollToTop}>
         <NavLink to="/">
           <img src={Logo} alt="instaProtek Logo" style={{width:"50%"}}/>
         </NavLink>
