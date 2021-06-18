@@ -35,7 +35,11 @@ const StyledButton = styled.a`
     width: 8rem;
     font-size: 0.8rem;
   }
-
+  @media (max-width: 900px){
+    width: 7rem;
+    font-size: 0.7rem;
+    line-height: 2rem;
+  }
 `
 
 export default Button

@@ -60,7 +60,7 @@ const FAQSection = () => {
             </div>
           </div>
           <div className="section-right-content" data-aos="zoom-in">
-            <img src={FAQs} alt="FAQs" />
+            <img src={FAQs} alt="Frequently asked questions image" />
           </div>
         </SectionWrapper>
       </PageWrapper>
@@ -106,11 +106,11 @@ const SectionWrapper = styled.div`
             display: inline-block;
             cursor: pointer;
             padding-top:1rem;
-            &.active{
-              color: #2ea1f8;
-            }
             &:hover{
-              color: #7c92a9;
+              color: black;
+            }
+            @media (max-width: 600px){
+              font-size: 1rem;
             }
           }
           div{
@@ -151,6 +151,9 @@ const SectionWrapper = styled.div`
     img {
       @media (max-width: 1400px) {
         width: 450px;
+      }
+      @media (max-width: 900px) {
+        width: 100%;
       }
     }
   }

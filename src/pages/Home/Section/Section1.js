@@ -33,18 +33,24 @@ const WhyInstaProtek = () => {
             <div className="right-details-container">
               <div className="right-details" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
                 <div className="list-item">
-                  <CheckIcon/>
-                  <span theme = {Themes}>Afforadable</span>
+                  <Title>
+                    <CheckIcon/>
+                    <span theme = {Themes}>Afforadable</span>
+                  </Title>
                   <p>Smart platform combined with sophisticated app allowing for lower cost and deductible.</p>
                 </div>
                 <div className="list-item">
-                  <CheckIcon/>
-                  <span theme={Themes}>Easy to use</span>
+                  <Title>
+                    <CheckIcon/>
+                    <span theme={Themes}>Easy to use</span>
+                  </Title> 
                   <p>On-demand, easy-to-use, app-driven protection that enables purchases with the push of a button.</p>
                 </div>
                 <div className="list-item">
-                  <CheckIcon/>
-                  <span theme={Themes}>Competitive</span>
+                  <Title>
+                    <CheckIcon/>
+                    <span theme={Themes}>Competitive</span>
+                  </Title>
                   <p>Unmatched nationwide coverage backed by a top-rated provider and reliable 24/7 support.</p>
                 </div>
               </div>
@@ -112,6 +118,9 @@ const SectionContentWrapper = styled.div`
       font-size: 1rem;
       text-align: center;
     }
+    @media (max-width: 600px){
+      position: static;
+    }
   }
   .right-details-container{
     position: absolute;
@@ -133,12 +142,27 @@ const SectionContentWrapper = styled.div`
           color: #2ea1f8;
           font-weight: 900;
           font-size: 1.5rem;
+          padding-left: 0.5rem;
         }
+        @media (max-width: 600px){
+          padding: 0;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      @media (max-width: 600px){
+        padding: 3rem 0;
+        flex-direction: column;
+        align-items: center;
       }
     }
     @media (max-width: 900px){
       top: 20rem;
       padding: 0 5rem;
+    }
+    @media (max-width: 600px){
+      position: static;
+      padding: 0 1rem;
     }
   }
   .left-container{
@@ -158,6 +182,9 @@ const SectionContentWrapper = styled.div`
         align-items: center;
         text-align: center;
       }
+      @media (max-width: 600px){
+        position: static;
+      }
     }
     @media (max-width: 900px){
       left: 8rem;
@@ -165,6 +192,19 @@ const SectionContentWrapper = styled.div`
       font-size: 1rem;
       max-width: 350px;
     }
+    @media (max-width: 600px){
+      position: static;
+      padding: 3rem 0;
+    }
+  }
+`
+
+const Title = styled.div`
+  display: flex;
+  align-items: center;
+  @media (max-width: 600px){
+    justify-content: center;
+    padding: 0.5rem 0;
   }
 `
 

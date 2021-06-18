@@ -28,6 +28,9 @@ const SectionWrapper = styled.section`
     @media (max-width: 900px) {
       padding-top: 5rem;
     }
+    @media (max-width: 600px) {
+      font-size: 2rem;
+    }
   }
   p {
     font-size: 1rem;
@@ -38,6 +41,11 @@ const SectionWrapper = styled.section`
     @media (max-width: 900px) {
       width: 100%;
     }
+  }
+  @media (max-width: 600px){
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 2rem;
   }
 `
 

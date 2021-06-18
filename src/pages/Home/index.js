@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Footer from '../../components/Footer';
-// import InfoSection from '../../components/InfoSection';
 import Navbar from '../../components/Navbar'
 import SideBar from '../../components/SideBar'
 import FAQSection from './Section/FAQSection';
@@ -28,7 +27,6 @@ const Home = () => {
       <SideBar isOpen={isOpen} toggle = {toggle}/>
       <Navbar toggle={toggle}/>
       <HeroSection/>
-      {/* <InfoSection/> */}
       <WhyInstaProtek/>
       <InstaProtekApp/>
       <GadgetCards/>

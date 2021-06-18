@@ -65,12 +65,20 @@ const SectionWrapper = styled.section`
       @media (max-width: 1400px) {
         flex-direction: column;
       }
+      @media (max-width: 600px) {
+        padding: 1rem;
+      }
       .card-item-content-left {
         width: 50%;
         padding: 5rem 10rem;
         @media (max-width: 1400px) {
           width: unset;
           padding: 0;
+        }
+        img{
+          @media (max-width: 600px) {
+            width: 100%;
+         }
         }
       }
 
@@ -95,8 +103,14 @@ const SectionWrapper = styled.section`
           font-size: 1rem;
           padding-top: 1rem;
           color: #7c92a9;
+          @media (max-width:600px){
+            padding: 1rem 12rem;
+          }
         }
       }
+    }
+    @media (max-width:600px){
+      padding: 1rem 0;
     }
   }
 
@@ -143,6 +157,9 @@ const SectionWrapper = styled.section`
             @media (max-width: 900px) {
               width: 100%;
             }
+          }
+          @media (max-width:600px){
+            padding: 2rem 0;
           }
         }
         @media (max-width: 900px) {
@@ -208,6 +225,9 @@ const SectionWrapper = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 600px){
+      padding: 1rem;
+    }
   }
 `
 

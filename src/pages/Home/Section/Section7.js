@@ -90,7 +90,7 @@ const SectionContainer = styled.div`
       @media (max-width: 880px) {
         position: static;
         width: 70%;
-        padding-bottom: 1rem;
+        margin-bottom: 1rem;
       }
       @media (max-width: 600px) {
         width: 100%;
@@ -140,17 +140,10 @@ const SectionContainer = styled.div`
         width: 17%;
         padding-bottom: 0.5rem;
       }
+      @media (max-width: 600px){
+        width: 30%;
+      }
     }
-    /* @media (max-width: 1400px) {
-      left: 52rem;
-    }
-    @media (max-width: 1200px) {
-      left: 48rem;
-    }
-    @media (max-width: 1024px) {
-      left: 37rem;
-      top: 72px;
-    } */
     @media (max-width: 900px){
       position: unset;
       display: flex;
@@ -178,11 +171,15 @@ const SectionContainer = styled.div`
       }
       @media (max-width: 900px) {
         font-size: 1rem;
+        line-height: 1.5rem;
       }
     }
   }
   @media (max-width: 900px){
     min-height: 960px;
+  }
+  @media (max-width: 600px){
+    min-height: 840px;
   }
 `
 
