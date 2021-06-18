@@ -57,7 +57,7 @@ const SectionWrapper = styled.section`
       background-color: white;
       border-radius: 10px;
       width: 100%;
-      padding: 0 2rem;
+      padding: 2rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -108,6 +108,9 @@ const SectionWrapper = styled.section`
           }
         }
       }
+    }
+    @media (max-width: 1600px){
+      padding: 5rem;
     }
     @media (max-width:600px){
       padding: 1rem 0;
@@ -200,6 +203,12 @@ const SectionWrapper = styled.section`
               width: 100%;
             }
           }
+          @media (max-width: 1600px){
+            padding: 4rem;
+          }
+          @media (max-width: 600px){
+            padding: 1rem;
+          }
         }
         @media (max-width: 900px) {
           width: 50%;
@@ -214,6 +223,12 @@ const SectionWrapper = styled.section`
         flex-wrap: wrap;
         height: auto;
       }
+    }
+    @media (max-width: 1600px){
+      padding: 0 5rem;
+    }
+    @media (max-width: 600px){
+      padding: 0;
     }
   }
   @media (max-width: 900px) {

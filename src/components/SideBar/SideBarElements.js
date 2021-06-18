@@ -39,9 +39,9 @@ export const SideBarMenu = styled.ul`
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
   text-align: center;
-
-  @media (max-width: 800px){
-    grid-template-rows: repeat(6, 80x);
+  
+  @media (max-width: 600px){
+    grid-template-rows: repeat(6, 60px);
   }
 `
 export const SideBarLink = styled(LinkS)`

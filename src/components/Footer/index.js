@@ -52,7 +52,7 @@ const Footer = () => {
         <FooterCopyright>
           <FooterContent>
             <FooterSpan>&copy;2019 instaProtek, Inc. All Rights Reserved | instaProtek Respects your privacy.</FooterSpan>
-            <FooterSpan>Powered by dna:micro</FooterSpan>
+            <FooterSpan>Powered by <a href='/'>dna:micro</a></FooterSpan>
           </FooterContent>
         </FooterCopyright>
       </FooterWrap>

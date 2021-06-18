@@ -31,7 +31,7 @@ const WhyInstaProtek = () => {
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, sed diam nonumy eirmod et.</p>
             </div>
             <div className="right-details-container">
-              <div className="right-details" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+              <div className="right-details" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
                 <div className="list-item">
                   <Title>
                     <CheckIcon/>
@@ -99,8 +99,10 @@ const SectionContentWrapper = styled.div`
     object-fit: cover;
     width: 100%;
     img{
-      @media (max-width: 900px){
+      @media (max-width: 1366px){
         width: 100%;
+      }
+      @media (max-width: 900px){
         opacity: 0.3;
       }
     }
@@ -112,14 +114,18 @@ const SectionContentWrapper = styled.div`
     max-width: 550px;
     font-size: 1.5rem;
     padding: 0 2rem;
+    @media (max-width: 1366px){
+      right: 3rem;
+    }
     @media (max-width: 900px){
       right: 8rem;
-      max-width: 350px;
       font-size: 1rem;
       text-align: center;
+      padding: 1rem;
     }
     @media (max-width: 600px){
       position: static;
+      max-width: unset;
     }
   }
   .right-details-container{
@@ -144,6 +150,9 @@ const SectionContentWrapper = styled.div`
           font-size: 1.5rem;
           padding-left: 0.5rem;
         }
+        @media (max-width: 1366px){
+          padding: 1rem 0;
+        }
         @media (max-width: 600px){
           padding: 0;
           width: 100%;
@@ -155,10 +164,25 @@ const SectionContentWrapper = styled.div`
         flex-direction: column;
         align-items: center;
       }
+      @media (max-width: 1600px){
+        padding-right: 5rem;
+      }
+      @media (max-width: 1366px){
+        flex-wrap: nowrap;
+        flex-direction: column;
+      }
+      @media (max-width: 600px){
+        padding: 1rem 0;
+      }
+    }
+    @media (max-width: 1366px){
+      right: -16rem;
+      top: 25rem;
     }
     @media (max-width: 900px){
-      top: 20rem;
+      top: 23rem;
       padding: 0 5rem;
+      right: -18rem;
     }
     @media (max-width: 600px){
       position: static;
@@ -176,6 +200,9 @@ const SectionContentWrapper = styled.div`
       p{
         padding-bottom: 3rem;
       }
+      @media (max-width: 1600px){
+        padding-left: 5rem;
+      }
       @media (max-width: 900px){
         display: flex;
         flex-direction: column;
@@ -184,17 +211,18 @@ const SectionContentWrapper = styled.div`
       }
       @media (max-width: 600px){
         position: static;
+        padding: 0 1rem;
       }
     }
     @media (max-width: 900px){
       left: 8rem;
       bottom: -45rem;
       font-size: 1rem;
-      max-width: 350px;
     }
     @media (max-width: 600px){
       position: static;
       padding: 3rem 0;
+      max-width: unset;
     }
   }
 `

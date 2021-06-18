@@ -11,11 +11,11 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      <Nav onClick={scrollToTop}>
+      <Nav onClick={ scrollToTop }>
         <NavLink to="/">
           <img src={Logo} alt="instaProtek Logo" style={{width:"50%"}}/>
         </NavLink>
-        <Bars onClick={toggle}/>
+        <Bars onClick={ toggle }/>
         <NavMenu>
           <NavLink to="/" activeStyle> 
             Home

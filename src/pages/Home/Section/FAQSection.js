@@ -11,13 +11,6 @@ const FAQSection = () => {
   const [show3, setShow3] = useState(false);
   const [show4, setShow4] = useState(false);  
 
-  // const handleShow = (id) =>{
-  //   setShow((preState) => ({
-  //     ...preState,
-  //     [id]: !preState[id]
-  //   }));
-  // }
-
   useEffect(() => {
     AOS.init({duration: 1000});
   },[]);

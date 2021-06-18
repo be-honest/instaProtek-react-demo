@@ -13,6 +13,7 @@ const ReviewsSection = () => {
   return (
     <SectionWrapper>
       <PageWrapper>
+        <HorizontalRule />
         <div className="container">
           <div className="section-left-content" data-aos="zoom-in" data-aos-delay="100">
             <img src={Customer} alt="" />
@@ -84,6 +85,16 @@ const SectionWrapper = styled.section`
       flex-direction: column;
       padding: 2rem;
     }
+  }
+`
+
+const HorizontalRule = styled.div`
+  border-top: 2px solid #f7f6f7;
+  width: 65%;
+  padding: 5rem 0;
+  @media (max-width: 900px){
+    width: 100%;
+    padding: 0 3rem;
   }
 `
 

@@ -59,10 +59,12 @@ const SectionContainer = styled.div`
     left: -14rem;
     transform: scaleX(-1);
     @media (max-width: 1400px) {
-      width: 35%;
+      width: 100%;
+      left: -70rem;
     }
     @media (max-width: 1024px) {
-      width: 45%;
+      top: -5rem;
+      left: -50rem;
     }
     @media (max-width: 900px) {
       display: none;
@@ -84,12 +86,12 @@ const SectionContainer = styled.div`
       }
       @media (max-width: 1024px) {
         width: 40%;
-        left: -5px;
-        top: 290px;
+        left: 70px;
+        top: 390px;
       }
-      @media (max-width: 880px) {
+      @media (max-width: 900px) {
         position: static;
-        width: 70%;
+        width: 100%;
         margin-bottom: 1rem;
       }
       @media (max-width: 600px) {
@@ -107,18 +109,16 @@ const SectionContainer = styled.div`
       }
       @media (max-width: 1400px) {
         width: 35%;
-      }
-      @media (max-width: 1400px) {
-        width: 35%;
+       
       }
       @media (max-width: 1024px) {
         width: 40%;
-        left: 130px;
-        top: 185px;
+        left: 150px;
+        top: 235px;
       }
-      @media (max-width: 880px) {
+      @media (max-width: 900px) {
         position: static;
-        width: 70%;
+        width: 100%;
       }
       @media (max-width: 600px) {
         width: 100%;
@@ -145,7 +145,7 @@ const SectionContainer = styled.div`
       }
     }
     @media (max-width: 900px){
-      position: unset;
+      position: static;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -174,9 +174,16 @@ const SectionContainer = styled.div`
         line-height: 1.5rem;
       }
     }
+    @media (max-width: 1600px){
+      left: 55rem;
+      padding-right: 3rem;
+    }
+    @media (max-width: 1366px){
+      left: 40rem;
+    }
   }
   @media (max-width: 900px){
-    min-height: 960px;
+    min-height: 1360px;
   }
   @media (max-width: 600px){
     min-height: 840px;

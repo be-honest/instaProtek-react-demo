@@ -36,16 +36,24 @@ const Section = styled.section`
   background-image: url(${BckgrndImg});
   position: relative;
   width: 100%;
+  max-width: 2300px;
   height: 389px;
   display: block;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  @media (max-width: 900px){
+    min-height: 560px;
+    height: 100%;
+  }
 `
 
 const SectionWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 900px){
+    flex-direction: column;
+  }
 `
 
 const Left = styled.div`
@@ -55,15 +63,19 @@ const Left = styled.div`
     height: 385px;
     object-fit: cover;
     object-position: 20px 10px;
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
       height: unset;
+      width: 50%;
+    }
+    @media (max-width: 600px) {
+      width: 60%;
     }
   }
   @media (max-width: 1024px) {
     padding: 0;
   }
-  @media (max-width: 800px) {
-    width: 100%;
+  @media (max-width: 900px) {
+    width: unset;
     text-align: center;
   }
 `
@@ -75,6 +87,9 @@ const Right = styled.div`
     @media (max-width: 1450px) {
       font-size: 2rem;
     }
+    @media (max-width: 900px){
+      font-size: 1.5rem;
+    }
   }
   p {
     font-size: 1rem;
@@ -82,15 +97,16 @@ const Right = styled.div`
     color: $secondarycolor;
     padding-bottom: 3rem;
   }
-  .ios {
-    padding-right: 2rem;
-    @media (max-width: 1600px) {
-      width: 150px;
-      padding-right: 0;
+  .applogo{
+    img{
+      @media (max-width: 900px){
+        width: 10rem;
+      }
     }
-    @media (max-width: 1400px) {
-      width: 100px;
-    }
+  }
+  @media (max-width: 900px){
+    padding: 1rem;
+    text-align: center;
   }
 `
 

@@ -100,14 +100,24 @@ const SectionContainer = styled.div`
     right: -280px;
     top: -255px;
     z-index: -1;
+    @media (max-width: 1600px){
+      right: -415px;
+      top: -320px;
+    }
     @media (max-width: 1024px) {
       width: 50%;
       right: -300px;
       top: -56px;
     }
-    @media (max-width: 880px) {
+    @media (max-width: 900px) {
       display: none;
     }
+  }
+  @media (max-width: 1600px){
+    padding: 0 5rem;
+  }
+  @media (max-width: 600px){
+    padding: 1rem;
   }
 `
 
